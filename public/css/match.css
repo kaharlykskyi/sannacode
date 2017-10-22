@@ -1,0 +1,69 @@
+nav {
+    margin-bottom: 25px;
+}
+span.help-block {
+    font-size: 13px;
+    color: rgb(197, 0, 0);
+    font-weight: 100;
+}
+.has-error {
+    border-color: rgb(197, 0, 0);
+}
+
+::-webkit-input-placeholder {
+    font-size: 13px;
+}
+
+i.fa-sort {
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+table#table>thead>tr>th:hover {
+    cursor: pointer;
+}
+
+div#matches_filter>label>input[type=search], div#table_filter>label>input[type=search] {
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 5px;
+    font-size: 15px;
+}
+table#table tbody {
+    font-size: 14px;
+}
+.add-score-date {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+html, body {
+    height: 100vh;
+}
+
+.full-height {
+    height: 90vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
