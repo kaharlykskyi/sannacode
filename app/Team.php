@@ -22,6 +22,8 @@ class Team extends Model
     }
 
     /**
+     * Return all team models order by points.
+     *
      * @return Collection
      */
     public function getAllTeams(): Collection
@@ -33,6 +35,8 @@ class Team extends Model
     }
 
     /**
+     * Return list of team names.
+     *
      * @return array
      */
     public function getAllTeamsName(): array
@@ -41,6 +45,8 @@ class Team extends Model
     }
 
     /**
+     * Returns team name by id
+     *
      * @param $id
      */
     public static function getTeamNameById(int $id)
@@ -49,6 +55,8 @@ class Team extends Model
     }
 
     /**
+     * Return team by id.
+     *
      * @param $id
      */
     public static function getTeamById(int $id)
@@ -56,6 +64,13 @@ class Team extends Model
         return Team::findOrFail($id);
     }
 
+    /**
+     * Returns home and away team names by id.
+     *
+     * @param int $homeTeamId
+     * @param int $awayTeamId
+     * @return array
+     */
     public function getTeamsByIds(int $homeTeamId, int $awayTeamId): array
     {
         return [

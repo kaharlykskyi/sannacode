@@ -24,8 +24,3 @@ Route::get('upcoming/{id}/score', 'UpcomingMatchesController@showScore')->name('
 Route::put('score/{id}', 'UpcomingMatchesController@updateScore')->name('upcoming.update-score');
 
 
-Route::get('/test', function() {
-
-});
-
-

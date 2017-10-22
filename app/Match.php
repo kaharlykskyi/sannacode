@@ -40,6 +40,8 @@ class Match extends Model
     }
 
     /**
+     * Save match model.
+     *
      * @param array $data
      * @return bool
      */
@@ -55,6 +57,13 @@ class Match extends Model
         return $match->save();
     }
 
+    /**
+     * Update match model.
+     *
+     * @param int $id
+     * @param array $data
+     * @return bool
+     */
     public function updateMatch(int $id, array $data): bool
     {
         $match = $this->getMatchById($id);

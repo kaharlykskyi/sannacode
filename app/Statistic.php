@@ -63,6 +63,12 @@ class Statistic extends Model
         return true;
     }
 
+    /**
+     * Return statistic model by team id.
+     *
+     * @param $id
+     * @return mixed
+     */
     private static function getStatisticByTeamId($id)
     {
         return Statistic::findOrFail($id);

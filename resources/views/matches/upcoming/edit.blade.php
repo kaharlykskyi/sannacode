@@ -65,32 +65,6 @@
                     </span>
                 @endif
             </fieldset>
-            {{--<div class="form-group">
-                <label for="score">Score</label>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <input type="number"
-                                   min="0"
-                                   class="form-control{{ $errors->has('home_team_score') ? ' has-error' : '' }}"
-                                   name="home_team_score"
-                                   placeholder="Home"
-                                   value="{{ $score[0] }}"
-                                   required>
-                        </div>
-                        <span class="pt-1">:</span>
-                        <div class="col-md-3">
-                            <input type="number"
-                                   min="0"
-                                   class="form-control{{ $errors->has('away_team_score') ? ' has-error' : '' }}"
-                                   name="away_team_score"
-                                   placeholder="Away"
-                                   value="{{ $score[1] }}"
-                                   required>
-                        </div>
-                    </div>
-                </div>
-            </div>--}}
             <hr>
             <button type="submit" class="btn btn-success hover">Edit result</button>
             <a href="{{ route('upcoming.index') }}" class="btn btn-warning hover ml-3">Back to match list</a>

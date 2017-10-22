@@ -116,6 +116,14 @@ class UpcomingMatchesController extends Controller
         return redirect()->route('upcoming.index');
     }
 
+    /**
+     * Show the form for adding the score.
+     *
+     * @param Match $matchModel
+     * @param Team $team
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function showScore(Match $matchModel, Team $team, $id)
     {
         $match = $matchModel->getMatchById($id);
@@ -128,6 +136,14 @@ class UpcomingMatchesController extends Controller
         ]);
     }
 
+    /**
+     * Update the score in statistic model.
+     *
+     * @param AddScoreRequest $request
+     * @param Match $matchModel
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function updateScore(AddScoreRequest $request, Match $matchModel, $id)
     {
         $data = $request->all();
